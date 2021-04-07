@@ -18,10 +18,10 @@ var a = a + a;
 alert("A = " + a + "\nB = " + b);
 
 alert("Задача №3. \nВасилий = Василий")
-var name = "Василий";
-alert("name - " + name);
+var name = " Василий ";
+alert("name -  " + name);
 var admin = name;
-alert("admin - " + admin);
+alert("admin -  " + admin);
 
 alert("Задача №4.\n1000+108")
 var c = 1000 + "108";
