@@ -15,9 +15,6 @@ var b = b - a;
 var a = a + a;
 alert("A = " + a + "\nB = " + b);
 
-
-
-
 alert("Задача №3. \nВасилий = Василий")
 var name = "Василий";
 alert("name - " + name);
