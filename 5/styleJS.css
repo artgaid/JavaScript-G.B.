@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#x {
+    display: flex;
+    justify-content: center;
+}
+
+.c {
+    background-color:burlywood;
+    font-size: 40px;
+}
+
+.b {
+    font-size: 40px;
+    background-color:cornsilk;
+}
+
+.a0, .a9, .d9, .d0{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:rgb(149, 126, 67);
+}
+
+.a0, .d9 {
+    transform: rotate(180deg);
+}
+
+td {
+    border: 1px solid #000;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+
+a {
+    display: block;
+    width: 40px;
+    text-decoration: none;
+    color: black;
+    margin-left: 9px;
+}
+
+a:hover {
+    transform: scale(2);
+    transition: all 0.5s ease-out; 
+}
+
+
