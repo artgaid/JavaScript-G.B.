@@ -1,0 +1,29 @@
+<script>
+
+    var x;
+
+    do {
+        ok = false;
+        x = +prompt("Введите число от 0 до 999");
+        if (x > 999 || x == 0) {
+            console.log("Число неверное, введите другое число!");
+            alert("Число неверное, введите другое число!");
+            ok = false;
+        } else if (isNaN(x) || !isFinite(x)) {
+            alert('Вы ввели недопустимый символ');
+            ok = false;
+        } else {
+            ok = true;
+        }
+    } while (!ok);
+    var obj = new f(x);
+    console.log(obj);
+    alert("единицы: " + obj.ed + "\nдесятки: " + obj.des + "\nсотни: " + obj.hun);
+
+    function f(n) {
+        this.ed = (n % 10);
+        this.des = Math.floor((n / 10) % 10);
+        this.hun = Math.floor(n / 100);
+    }
+
+</script>
