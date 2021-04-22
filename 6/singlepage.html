@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b6c6614eab.js" crossorigin="anonymous"></script>
+    <script defer src="scriptSingle.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="conteiner">
+            <div class="header-flex">
+                <div class="header-left">
+                    <a href="index.html" class="logo-link">
+                        <img class="logo-img" src="img/logo.png" alt="logo">
+                        <p class="logo__header">BRAN<span class="red-text">D</span></p>
+                    </a>
+                    <div class="browse-button">
+
+                        <a href="#" class="header-browse">Browse
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                        <div class="browse-menu">
+                            <div class="mega-flex">
+                                <h3 class="mega-head">Women</h3>
+                                <ul>
+                                    <li class="mega-menu-list "> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                    </li>
+                                    <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a>
+                                    </li>
+                                    <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                            href="#">Sweaters/Knits</a> </li>
+                                    <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                            href="#">Jackets/Coats</a> </li>
+                                    <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Blazers</a>
+                                    </li>
+                                    <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Denim</a>
+                                    </li>
+                                    <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                            href="#">Leggings/Pants</a></li>
+                                    <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                            href="#">Skirts/Shorts</a></li>
+                                    <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                            href="#">Accessories</a></li>
+
+                                </ul>
+                                <h3 class="mega-head">Men</h3>
+                                <ul>
+                                    <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tees/Tank
+                                            tops</a> </li>
+                                    <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                            href="#">Shirts/Polos</a> </li>
+                                    <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Sweaters</a>
+                                    </li>
+                                    <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                            href="#">Sweatshirts/Hoodies</a> </li>
+                                    <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Blazers</a>
+                                    </li>
+                                    <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                            href="#">Jackets/vests</a> </li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <input class="header-input" type="text" placeholder="Search for Item...">
+                    <button class="header-button" type="submit">
+                        <img src="img/Q.png" alt="Q">
+                    </button>
+
+                </div>
+
+                <div class="header-right">
+                    <img src="img/cart.svg" alt="cart">
+                    <a href="#" class="my-acc link_background">My Account
+                        <i class="fas fa-caret-down"></i>
+
+                    </a>
+                    <div class="cart-menu">
+                        <div class="cart-product">
+                            <a href="singlepage.html" class="cart-content">
+                                <img src="img/cart-photo1.jpg" alt="product">
+                                <div class="cart-text">
+                                    <p class="cart-product-name">Rebox Zane</p>
+                                    <div class="rating-area">
+                                        <input type="radio" id="star-5" name="rating" value="5">
+                                        <label for="star-5" title="Оценка «5»"></label>
+                                        <input type="radio" id="star-4" name="rating" value="4">
+                                        <label for="star-4" title="Оценка «4»"></label>
+                                        <input type="radio" id="star-3" name="rating" value="3">
+                                        <label for="star-3" title="Оценка «3»"></label>
+                                        <input type="radio" id="star-2" name="rating" value="2">
+                                        <label for="star-2" title="Оценка «2»"></label>
+                                        <input type="radio" id="star-1" name="rating" value="1">
+                                        <label for="star-1" title="Оценка «1»"></label>
+                                    </div>
+                                    <p class="cart-product-price">1 x $250</p>
+                                </div>
+                            </a>
+                            <i class="fa fa-times-circle cart-x" aria-hidden="true"></i>
+                        </div>
+                        <hr class="cart-hr">
+                        <div class="cart-product">
+                            <a href="singlepage.html" class="cart-content">
+                                <img src="img/cart-photo2.jpg" alt="product">
+                                <div class="cart-text">
+                                    <p class="cart-product-name">Rebox Zane</p>
+                                    <div class="rating-area">
+                                        <input type="radio" id="star-5" name="rating" value="5">
+                                        <label for="star-5" title="Оценка «5»"></label>
+                                        <input type="radio" id="star-4" name="rating" value="4">
+                                        <label for="star-4" title="Оценка «4»"></label>
+                                        <input type="radio" id="star-3" name="rating" value="3">
+                                        <label for="star-3" title="Оценка «3»"></label>
+                                        <input type="radio" id="star-2" name="rating" value="2">
+                                        <label for="star-2" title="Оценка «2»"></label>
+                                        <input type="radio" id="star-1" name="rating" value="1">
+                                        <label for="star-1" title="Оценка «1»"></label>
+                                    </div>
+                                    <p class="cart-product-price">1 x $250</p>
+                                </div>
+                            </a>
+                            <i class="fa fa-times-circle cart-x" aria-hidden="true"></i>
+                        </div>
+                        <hr class="cart-hr">
+                        <div class="cart-total">
+                            <p>TOTAL</p>
+                            <p>$500.00</p>
+                        </div>
+                        <button class="cart-button" type="submit">Checkout</button>
+                        <br>
+                        <button class="cart-button" type="submit">Go to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+    <div class="header-menu">
+        <div class="conteiner">
+            <ol class="menu-list">
+                <li class="menu-list-addmega"> <a class="menu-link link_red" href="product.html">home</a>
+                    <div class="mega-menu">
+                        <div class="mega-flex">
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="product.html">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="product.html">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="product.html">Sweaters/Knits</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="product.html">Jackets/Coats</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="product.html">Blazers</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="product.html">Denim</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="product.html">Leggings/Pants</a></li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="product.html">Skirts/Shorts</a></li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="product.html">Accessories</a>
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+                        <div class="mega-flex">
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="product.html">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="product.html">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="product.html">Sweaters/Knits</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="product.html">Jackets/Coats</a> </li>
+                            </ul>
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="product.html">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="product.html">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="product.html">Sweaters/Knits</a> </li>
+                            </ul>
+                        </div>
+                        <div class="mega-flex">
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="product.html">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="product.html">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="product.html">Sweaters/Knits</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="product.html">Jackets/Coats</a> </li>
+                            </ul>
+                            <a href="product.html">
+                                <img class="mega-menu-img" src="img/Super_Sale_.png" alt="Super sale">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-list-addmega"> <a class="menu-link link_red" href="product.html">Man</a>
+                    <div class="mega-menu">
+                        <div class="mega-flex">
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Sweaters/Knits</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Jackets/Coats</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Blazers</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Denim</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Leggings/Pants</a></li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Skirts/Shorts</a></li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Accessories</a>
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+                        <div class="mega-flex">
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Sweaters/Knits</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Jackets/Coats</a> </li>
+                            </ul>
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Sweaters/Knits</a> </li>
+                            </ul>
+                        </div>
+                        <div class="mega-flex">
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Sweaters/Knits</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Jackets/Coats</a> </li>
+                            </ul>
+                            <a href="product.html">
+                                <img class="mega-menu-img" src="img/Super_Sale_.png" alt="Super sale">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-list-addmega"> <a class="menu-link link_red" href="product.html">Women</a>
+                    <div class="mega-menu">
+                        <div class="mega-flex">
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Sweaters/Knits</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Jackets/Coats</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Blazers</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Denim</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Leggings/Pants</a></li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Skirts/Shorts</a></li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Accessories</a>
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+                        <div class="mega-flex">
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Sweaters/Knits</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Jackets/Coats</a> </li>
+                            </ul>
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Sweaters/Knits</a> </li>
+                            </ul>
+                        </div>
+                        <div class="mega-flex">
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Sweaters/Knits</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Jackets/Coats</a> </li>
+                            </ul>
+                            <a href="product.html">
+                                <img class="mega-menu-img" src="img/Super_Sale_.png" alt="Super sale">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-list-addmega"> <a class="menu-link link_red" href="product.html">Kids</a>
+                    <div class="mega-menu">
+                        <div class="mega-flex">
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Sweaters/Knits</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Jackets/Coats</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Blazers</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Denim</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Leggings/Pants</a></li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Skirts/Shorts</a></li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Accessories</a>
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+                        <div class="mega-flex">
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Sweaters/Knits</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Jackets/Coats</a> </li>
+                            </ul>
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Sweaters/Knits</a> </li>
+                            </ul>
+                        </div>
+                        <div class="mega-flex">
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Sweaters/Knits</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Jackets/Coats</a> </li>
+                            </ul>
+                            <a href="product.html">
+                                <img class="mega-menu-img" src="img/Super_Sale_.png" alt="Super sale">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-list-addmega"> <a class="menu-link link_red" href="product.html">Accoseriese</a>
+                    <div class="mega-menu">
+                        <div class="mega-flex">
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Sweaters/Knits</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Jackets/Coats</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Blazers</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Denim</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Leggings/Pants</a></li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Skirts/Shorts</a></li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Accessories</a>
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+                        <div class="mega-flex">
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Sweaters/Knits</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Jackets/Coats</a> </li>
+                            </ul>
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Sweaters/Knits</a> </li>
+                            </ul>
+                        </div>
+                        <div class="mega-flex">
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Sweaters/Knits</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Jackets/Coats</a> </li>
+                            </ul>
+                            <a href="product.html">
+                                <img class="mega-menu-img" src="img/Super_Sale_.png" alt="Super sale">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-list-addmega"> <a class="menu-link link_red" href="product.html">Featured</a>
+                    <div class="mega-menu">
+                        <div class="mega-flex">
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Sweaters/Knits</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Jackets/Coats</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Blazers</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Denim</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Leggings/Pants</a></li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Skirts/Shorts</a></li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Accessories</a>
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+                        <div class="mega-flex">
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Sweaters/Knits</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Jackets/Coats</a> </li>
+                            </ul>
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Sweaters/Knits</a> </li>
+                            </ul>
+                        </div>
+                        <div class="mega-flex">
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Sweaters/Knits</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Jackets/Coats</a> </li>
+                            </ul>
+                            <a href="product.html">
+                                <img class="mega-menu-img" src="img/Super_Sale_.png" alt="Super sale">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-list-addmega"> <a class="menu-link link_red" href="product.html">Hot Deals</a>
+                    <div class="mega-menu">
+                        <div class="mega-flex">
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Sweaters/Knits</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Jackets/Coats</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Blazers</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Denim</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Leggings/Pants</a></li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Skirts/Shorts</a></li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Accessories</a>
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+                        <div class="mega-flex">
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Sweaters/Knits</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Jackets/Coats</a> </li>
+                            </ul>
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Sweaters/Knits</a> </li>
+                            </ul>
+                        </div>
+                        <div class="mega-flex">
+                            <h3 class="mega-head">Women</h3>
+                            <ul>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Dresses</a>
+                                </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red" href="#">Tops</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Sweaters/Knits</a> </li>
+                                <li class="mega-menu-list"> <a class="mega-menu-link link_red"
+                                        href="#">Jackets/Coats</a> </li>
+                            </ul>
+                            <a href="product.html">
+                                <img class="mega-menu-img" src="img/Super_Sale_.png" alt="Super sale">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <nav class="header-nav">
+        <div class="conteiner">
+            <div class="nav-flex">
+                <p class="nav-text-left red-text">New Arrivals </p>
+                <p class="nav-text-right">
+                    <a href="#" class="nav-link link_red">Home</a> /
+                    <a href="#" class="nav-link link_red">Men</a> /
+                    <a href="#" class="nav-link link_red">New Arrivals</a>
+                </p>
+            </div>
+
+
+        </div>
+
+    </nav>
+
+    <div class="product">
+        <div class="conteiner">
+            <div class="product-flex">
+                <a href="#" class="arrow-link">
+                    <i class="fa fa-angle-left arrow-photo" aria-hidden="true"></i>
+                </a>
+                <img class="p1" src="img/SP1.jpg" alt="photo">
+                <img class="p2" src="img/SP2.jpg" alt="photo">
+                <img class="p3" src="img/SP3.jpg" alt="photo">
+                <a href="#" class="arrow-link">
+                    <i class="fa fa-angle-right arrow-photo" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <selection>
+        <div class="conteiner">
+            <div class="desc-product">
+                <p class="red-text">WOMEN COLLECTION</p>
+                <div class="carousel-product">
+                    <a href="#" class="carousel-link"></a>
+                    <a href="#" class="carousel-link"></a>
+                    <a href="#" class="carousel-link"></a>
+                </div>
+                <h1 class="header-desc text_black">Moschino Cheap And Chic</h1>
+                <div class="desc-rating-area">
+                    <div class="rating-area">
+                        <input type="radio" id="star-5" name="rating" value="5">
+                        <label for="star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="star-4" name="rating" value="4">
+                        <label for="star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="star-3" name="rating" value="3">
+                        <label for="star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="star-2" name="rating" value="2">
+                        <label for="star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="star-1" name="rating" value="1">
+                        <label for="star-1" title="Оценка «1»"></label>
+                    </div>
+                </div>
+
+                <p class="desc-text">Compellingly actualize fully researched processes before proactive outsourcing.
+                    Progressively syndicate collaborative architectures before cutting-edge services. Completely
+                    visualize parallel core competencies rather than exceptional portals. </p>
+                <div class="desc-other">
+                    <p class="desc-material">MATERIAL: <span class="text_black">COTTON</span></p>
+                    <p class="desc-designer">DESIGNER: <span class="text_black">BINBURHAN</span></p>
+                </div>
+                <p class="desc-total red-text">$561</p>
+                <div class="desc-hr"></div>
+                <div class="desc-variety text_black">
+                    <div class="desc-block">
+                        <p>CHOOSE COLOR</p>
+                        <a href="#" class="desc-varity-link">
+                            <span class="veriety-text">
+                                <div class="color-box"></div>
+                                <p>Red</p>
+                            </span>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+
+                    </div>
+                    <div class="desc-block">
+                        <p class="desc-variety-text">CHOOSE SIZE</p>
+                        <a href="#" class="desc-varity-link">
+                            <span class="veriety-text">
+                                <p>XXL</p>
+                            </span>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="desc-block">
+                        <p class="desc-variety-text">QUANTITY</p>
+                        <a href="#" class="desc-varity-link">
+                            <span class="veriety-text">
+                                <p>2</p>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <button class="desc-addcart" type="submit">
+                    <img src="img/cart_red.svg" alt="cart">
+                    <p class="desc-addcart-text">Add to Cart</p>
+                </button>
+            </div>
+
+
+        </div>
+
+    </selection>
+    <div class="like-also conteiner">
+
+        <h3 class="like-header text_black">you may like also</h3>
+        <div class="items-list">
+            <div class="items-cards">
+                <a class="items-link" href="singlepage.html">
+                    <img class="items-img" src="img/like_photo1.jpg" alt="men">
+                    <div class="text-cards">
+                        <p>BLAZE LEGGINGS <br>
+                            <snap class="red-text">$52.00</snap>
+                        </p>
+                    </div>
+
+                </a>
+                <div class="items-add-flex">
+                    <a class="items-add" href="#">
+                        <img src="img/cart-items.svg" alt="cart">
+                        <span class="items-add-text">Add to Cart</span>
+                    </a>
+                </div>
+            </div>
+            <div class="items-cards">
+                <a class="items-link" href="singlepage.html">
+                    <img class="items-img" src="img/like_photo2.jpg" alt="photo">
+                    <div class="text-cards">
+                        <p>ALEXA SWEATER<br>
+                            <snap class="red-text">$52.00</snap>
+                        </p>
+                    </div>
+
+                </a>
+                <div class="items-add-flex">
+                    <a class="items-add" href="#">
+                        <img src="img/cart-items.svg" alt="cart">
+                        <span class="items-add-text">Add to Cart</span>
+                    </a>
+                </div>
+            </div>
+            <div class="items-cards">
+                <a class="items-link" href="singlepage.html">
+                    <img class="items-img" src="img/like_photo3.jpg" alt="product">
+                    <div class="text-cards">
+                        <p>AGNES TOP<br>
+                            <snap class="red-text">$52.00</snap>
+                        </p>
+                    </div>
+
+                </a>
+                <div class="items-add-flex">
+                    <a class="items-add" href="#">
+                        <img src="img/cart-items.svg" alt="cart">
+                        <span class="items-add-text">Add to Cart</span>
+                    </a>
+                </div>
+            </div>
+            <div class="items-cards">
+                <a class="items-link" href="singlepage.html">
+                    <img class="items-img" src="img/like_photo4.jpg" alt="product">
+                    <div class="text-cards">
+                        <p>SYLVA SWEATER<br>
+                            <snap class="red-text">$52.00</snap>
+                        </p>
+                    </div>
+
+                </a>
+                <div class="items-add-flex">
+                    <a class="items-add" href="#">
+                        <img src="img/cart-items.svg" alt="cart">
+                        <span class="items-add-text">Add to Cart</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="sub">
+            <img src="img/sub_fon+.png" class="sub-fon" alt="sub">
+            <div class="conteiner">
+                <div class="sub-content">
+                    <div class="sub-left">
+                        <img src="img/photo2.png" alt="photo">
+                        <div class="sub-text-left">
+                            <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                                a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                            <p class="sub-text-left2"> <span class="sub-text-red">Bin Burhan</span> <br>
+                                Dhaka, Bd</p>
+                            <ul class="corousel">
+                                <li><a href="#" class="corousel-link link_background"></a></li>
+                                <li><a href="#" class="corousel-link link_background"></a></li>
+                                <li><a href="#" class="corousel-link link_background"></a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <hr class="sub-hr">
+                    <div class="sub-right">
+                        <p><span class="sub-right-header">Subscribe</span> <br>
+                            FOR OUR NEWLETTER AND PROMOTION</p>
+                        <input type="email" class="sub-input" placeholder="Enter Your Email">
+                        <button class="sub-button link_background" type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-menu conteiner">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo-link">
+                        <img class="logo-img" src="img/logo.png" alt="logo">
+                        <p class="logo__header">BRAN<span class="red-text">D</span></p>
+                    </a>
+                </div>
+                <p class="footer-menu-text">Objectively transition extensive data rather than cross functional
+                    solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits.
+                    Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
+                    <br><br><br>
+                    Efficiently plagiarize 24/365 action items and focused infomediaries.
+                    Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                </p>
+            </div>
+            <ul class="footer-right">
+                <li>
+                    <ul class="footer-list">COMPANY
+                        <br><br><br>
+                        <li> <a href="#" class="footer-link link_red">Home </a></li>
+                        <li> <a href="#" class="footer-link link_red">Shop </a></li>
+                        <li> <a href="#" class="footer-link link_red">About </a></li>
+                        <li> <a href="#" class="footer-link link_red">How It Works </a></li>
+                        <li> <a href="#" class="footer-link link_red">Contact </a></li>
+
+
+                    </ul>
+                </li>
+                <li>
+                    <ul class="footer-list">INFORMATION
+                        <br><br><br>
+                        <li> <a href="#" class="footer-link link_red">Tearms & Condition </a></li>
+                        <li> <a href="#" class="footer-link link_red">Privacy Policy </a></li>
+                        <li> <a href="#" class="footer-link link_red">How to Buy </a></li>
+                        <li> <a href="#" class="footer-link link_red">How to Sell </a></li>
+                        <li> <a href="#" class="footer-link link_red">Promotion </a></li>
+
+                    </ul>
+
+                </li>
+                <li>
+                    <ul class="footer-list">SHOP CATEGORY
+                        <br><br><br>
+                        <li> <a href="#" class="footer-link link_red">Men</a></li>
+                        <li> <a href="#" class="footer-link link_red">Women</a></li>
+                        <li> <a href="#" class="footer-link link_red">Child</a></li>
+                        <li> <a href="#" class="footer-link link_red">Apparel</a></li>
+                        <li> <a href="#" class="footer-link link_red">Brows All</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+
+
+
+        </div>
+        <div class="footer-bottom">
+            <div class="conteiner">
+                <div class="footer-flex">
+                    <p class="copyright">© 2017 Brand All Rights Reserved. </p>
+                    <ul class="social_network">
+                        <li class="social-list"><a href="#" class="social-link link_background"><i
+                                    class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li class="social-list"><a href="#" class="social-link link_background"><i class="fa fa-twitter"
+                                    aria-hidden="true"></i></a></li>
+                        <li class="social-list"><a href="#" class="social-link link_background"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li class="social-list"><a href="#" class="social-link link_background"><i
+                                    class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                        <li class="social-list"><a href="#" class="social-link link_background"><i
+                                    class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

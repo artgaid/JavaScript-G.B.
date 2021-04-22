@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        .p {
+            display: none;
+        }
+    </style> -->
+
+</head>
+
+<body style="display: flex;">
+    <!-- <button id="b1">Кнопка 1</button>
+    <button id="b2">Кнопка 2</button>
+    <button id="b3">Кнопка 3</button> -->
+
+    <a id="b1" href="#"> Ссылка 1 </a>
+    <div class="photo">
+        <img class="p" src="img/SP1.jpg" alt="photo">
+        <img class="p" src="img/SP2.jpg" alt="photo">
+        <img class="p" src="img/SP3.jpg" alt="photo">
+    </div>
+    <a id="b2" href="#"> ссылка 2 </a>
+
+    <script>
+
+        var link = document.querySelectorAll("a");
+        var img = document.querySelectorAll("img");
+
+        console.log(link);
+        console.log(img);
+
+        link[0].addEventListener("click", f2);
+        link[1].addEventListener("click", f1);
+
+        for (i = 1; i < img.length; i++) {
+            img[i].style.display = "none";
+        }
+
+        var i = 0;
+
+        function f1() {
+            if (i % 2 == 0) {
+                link[1].style.color = "red";
+            } else {
+                link[1].style.color = "green";
+            }
+            img[i].style.display = "none";
+            i++;
+            if (i >= img.length) {
+                i = 0;
+            }
+            img[i].style.display = "block";
+        }
+
+        function f2() {
+            img[i].style.display = "none";
+            i -= 1;
+            if (i < 0) {
+                i = img.length - 1;
+            }
+            img[i].style.display = "block";
+        }
+
+        // for (var i = 0; i < 3; i++) {
+        //     link[i].onclick = function (e) {
+        //         var img = document.createElement('img');
+        //         img.src = "img/SP" + i + ".jpg";
+        //         document.body.append(img);
+        //     }
+        // }
+
+    </script>
+</body>
+
+</html>
