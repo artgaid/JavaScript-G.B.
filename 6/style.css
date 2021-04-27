@@ -202,6 +202,8 @@ body {
 }
 
 .cart-x {
+    border: 0;
+    background-color: white;
     color: #c0c0c0;
     font-size: 16px;
     text-align: right;

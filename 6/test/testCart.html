@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="cart.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b6c6614eab.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="conteiner">
+            <div class="header-flex">
+                <div class="header-left">
+                    <a href="index.html" class="logo-link">
+                        <img class="logo-img" src="img/logo.png" alt="logo">
+                        <p class="logo__header">BRAN<span class="red-text">D</span></p>
+                    </a>
+                    <div class="browse-button">
+
+                        <a href="#" class="header-browse">Browse
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                    </div>
+
+                    <input class="header-input" type="text" placeholder="Search for Item...">
+                    <button class="header-button" type="submit">
+                        <img src="img/Q.png" alt="Q">
+                    </button>
+
+                </div>
+
+                <div class="header-right">
+                    <img src="img/cart.svg" alt="cart">
+                    <a href="#" class="my-acc link_background">My Account
+                        <i class="fas fa-caret-down"></i>
+
+                    </a>
+                    <div class="cart-menu" id="cart-menu" style="display: block;">
+                        <hr class="cart-hr">
+                        <div class="cart-total">
+                            <p>TOTAL</p>
+                            <p id="cartTotal">000.00 $</p>
+                        </div>
+                        <button class="cart-button" type="submit">Checkout</button>
+                        <br>
+                        <button class="cart-button" type="submit">Go to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+    <h3 class="like-header text_black" style="margin-top: 30px;">you may like also</h3>
+    <div class="items-list" style="width: 600px;margin-left: 100px;">
+        <div class="items-cards item0" id="item0">
+            <a class="items-link" href="singlepage.html">
+                <img class="items-img" src="img/like_photo1.jpg" alt="men">
+                <div class="text-cards">
+                    <p class="title">BLAZE LEGGINGS </p>
+                    <p class="red-text"> $ <span class="price">52.00</span></p>
+                </div>
+
+            </a>
+            <div class="items-add-flex">
+                <a onclick="buyGood(0)" class="items-add" href="#">
+                    <img src="img/cart-items.svg" alt="cart">
+                    <span class="items-add-text">Add to Cart</span>
+                </a>
+            </div>
+        </div>
+        <div class="items-cards item1" id="item1">
+            <a class="items-link" href="singlepage.html">
+                <img class="items-img" src="img/like_photo2.jpg" alt="photo">
+                <div class="text-cards">
+                    <p class="title">ALEXA SWEATER </p>
+                    <p class="red-text"> $ <span class="price">42.00</span></p>
+                </div>
+
+            </a>
+            <div class="items-add-flex">
+                <a onclick="buyGood(1)" class="items-add" href="#">
+                    <img src="img/cart-items.svg" alt="cart">
+                    <span class="items-add-text">Add to Cart</span>
+                </a>
+            </div>
+        </div>
+        <div class="items-cards item2" id="item2">
+            <a class="items-link" href="singlepage.html">
+                <img class="items-img" src="img/like_photo3.jpg" alt="product">
+                <div class="text-cards">
+                    <p class="title">AGNES TOP </p>
+                    <p class="red-text"> $ <span class="price">38.00</span></p>
+                </div>
+
+            </a>
+            <div class="items-add-flex">
+                <a onclick="buyGood(2)" class="items-add" href="#">
+                    <img src="img/cart-items.svg" alt="cart">
+                    <span class="items-add-text">Add to Cart</span>
+                </a>
+            </div>
+        </div>
+        <div class="items-cards item3" id="item3">
+            <a class="items-link" href="singlepage.html">
+                <img class="items-img" src="img/like_photo4.jpg" alt="product">
+                <div class="text-cards">
+                    <p class="title">SYLVA SWEATER </p>
+                    <p class="red-text"> $ <span class="price">57.00</span></p>
+                </div>
+
+            </a>
+            <div class="items-add-flex">
+                <a onclick="buyGood(3)" class="items-add" href="#">
+                    <img src="img/cart-items.svg" alt="cart">
+                    <span class="items-add-text">Add to Cart</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <script src="cart.js"></script>
+</body>
+
+</html>
