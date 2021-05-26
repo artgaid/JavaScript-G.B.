@@ -5,19 +5,17 @@ const products = [
     { id: 4, title: 'Gamepad', price: 150 },
 ];
 
-const renderProduct = (title, price) => {
-    return `<div class="product-item">
+const renderProduct = (title, price, img = 'http://placehold.it/200x150/') => `<div class="product-item">
+                <img src="${img}" alt="Some img">
                 <h3>${title}</h3>
                 <p>${price}</p>
                 <button class="by-btn">Добавить</button>
               </div>`;
 
-    // }
-
-    // const renderProducts = (list) => {
-    //     const productList = list.map((product) => {
-    //         return renderProduct(product.title, product.price);
-    //     });
+const renderProducts = (list) => {
+    const productList = list.map((product) => {
+        return renderProduct(product.title, product.price);
+    });
 
     //console.log(productList);
     document.querySelector('.products').innerHTML = productList.join("");
