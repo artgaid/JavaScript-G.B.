@@ -1,0 +1,40 @@
+label {
+    display: flex;
+    padding: 5px;
+}
+
+h2 {
+    border-bottom: 2px solid black;
+}
+
+.ham-size {
+    padding-left: 20px;
+    background-color: wheat;
+    border-radius: 10px;
+}
+
+.ham-stuff {
+    padding-left: 20px;
+    background-color:darkgray ;
+    border-radius: 10px;
+}
+
+.topping {
+    padding-left: 20px;
+    background-color:darkkhaki;
+    border-radius: 10px;
+}
+
+button {
+    background-color: white;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.result {
+    background-color:indianred;
+    padding: 10px;
+    border-radius: 5px;
+}

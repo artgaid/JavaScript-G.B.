@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgers</title>
+    <link rel="stylesheet" href="hamb.css">
+</head>
+
+<body>
+    <div class="hamburgers">
+        <h2>Сделай свой бургер</h2>
+        <div class="ham-size">
+            <h3> Выберите размер гамбургера:</h3>
+            <label> <input type="radio" name="size" value="1" checked> Маленький </label>
+            <label> <input type="radio" name="size" value="2"> Средний </label>
+            <label> <input type="radio" name="size" value="3"> Большой </label>
+        </div>
+        <div class="ham-stuff">
+            <h3>Выберите начинку для гамбургера: </h3>
+            <label><input type="checkbox" name="stuff" checked> Сыр</label>
+            <label><input type="checkbox" name="stuff"> Салат</label>
+            <label><input type="checkbox" name="stuff"> Картофель</label>
+        </div>
+        <div class="topping">
+            <h3>Дополнительно можно: </h3>
+            <label><input type="checkbox" name="topping" checked> Посыпать приправой</label>
+            <label><input type="checkbox" name="topping"> Полить майонезом</label>
+        </div>
+        <button class="check" onclick="burgerFactory()">Рассчитать стоимость и калорийность гамбургера</button>
+        <p class="result">Итоговая стоимость: <span id="price">0</span> &#8381 <br>
+            Количество калорий: <span id="calories">0</span> cal. </p>
+    </div>
+    <script src="ham.js"></script>
+</body>
+
+</html>
