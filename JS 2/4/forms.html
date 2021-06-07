@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="#" id="forms">
+        <fieldset class="forms-fieldset">
+            <h3>Имя : </h3>
+            <label for="name">
+                <input type="text" id="name" placeholder="Олег">
+            </label>
+            <h3>Телефон : </h3>
+            <label for="tel">
+                <input type="text" id="tel" placeholder="+7(000)000-0000">
+            </label>
+            <h3>E-mail : </h3>
+            <label for="email">
+                <input type="email" id="email" placeholder="mymail@mail.ru">
+            </label>
+            <h3>Текст : </h3>
+            <label for="text">
+                <input type="text" id="text" placeholder=" Пример текста">
+            </label>
+            <br>
+        </fieldset>
+        <button id="btn" type="button"> Отправить </button>
+    </form>
+
+    <script>
+
+        document.getElementById('btn').addEventListener('click',
+            () => {
+                let form = new Forms('name', 'tel', 'email', 'text');
+                // console.log(form);
+            })
+
+
+        class Forms {
+
+            constructor(name, tel, email, txt) {
+                this.name = this.select(name);
+                this.tel = this.select(tel);
+                this.email = this.select(email);
+                this.text = this.select(txt);
+
+                this.addCheck();
+
+            }
+
+            select(name) {
+                return document.getElementById(name);
+            }
+
+            addCheck() {
+                this.check(this.name, /[a-z,а-я]/i, "Ошибка! Имя должно содержaть только буквы.", "p-name");
+                this.check(this.tel, /\+[0-9]\([0-9]{3}\)[0-9,\-]{7}/i, "Ошибка! Телефон имеет вид +7(000)000-0000.", "p-tel");
+                this.check(this.email, /my[\.\-]?mail@mail.ru/i, "Ошибка! E-mail имеет вид mymail@mail.ru, или my.mail@mail.ru, или my-mail@mail.ru.", "p-email");
+                this.check(this.text, /\w/i, "Ошибка! Введите произвольный текст.", "p-text");
+            }
+
+            check(elem, reg, txtError, idP) {
+                let regExp = reg.test(elem.value);
+
+                if (regExp == false) {
+                    if (document.getElementById(idP)) {
+                        return;
+                    } else {
+                        this.addRed(elem, txtError, idP);
+                        return;
+                    }
+                } else {
+                    if (document.getElementById(idP)) {
+                        this.removeRed(elem, txtError, idP);
+                        this.addGreen(elem, "Готово!")
+                        return;
+                    } else {
+                        return this.addGreen(elem, "Готово!");
+                    }
+                }
+            }
+
+            removeRed(elem, txtError, idP) {
+                elem.classList.remove('red');
+                document.getElementById(idP).remove();
+                return;
+            }
+
+            addRed(elem, txtError, idP) {
+                elem.classList.add('red');
+                elem.classList.remove('green');
+                elem.insertAdjacentHTML('afterend', '<p class="red-text" id="' + idP + '"> ' + txtError + ' </p>');
+                return;
+            }
+
+            addGreen(elem) {
+                elem.classList.add('green');
+                return;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
